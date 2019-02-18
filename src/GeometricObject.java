@@ -12,7 +12,7 @@ public abstract class GeometricObject
 
     }
 
-    protected GeometricObject(String color, boolean filled)
+    protected GeometricObject(String colour, boolean filled)
     {
         dateCreated = new java.util.Date();
         this.colour = colour;
@@ -24,7 +24,7 @@ public abstract class GeometricObject
         return colour;
     }
 
-    public void setColour(String color)
+    public void setColour(String colour)
     {
         this.colour = colour;
     }
@@ -47,7 +47,7 @@ public abstract class GeometricObject
     @Override
     public String toString()
     {
-        return "created on " + dateCreated + "\nColour: " + colour + " \nFilled: " + filled;
+        return "Created on: " + dateCreated + "\nColour: " + colour + " \nFilled: " + filled;
     }
 
     public abstract double getArea();
