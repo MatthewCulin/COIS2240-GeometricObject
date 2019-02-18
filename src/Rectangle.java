@@ -33,4 +33,4 @@ public class Rectangle extends GeometricObject
 
         return perimeter;
     }
-}
+}// END OF RECTANGLE CLASS
