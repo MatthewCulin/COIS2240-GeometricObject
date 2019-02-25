@@ -5,20 +5,21 @@ public class Rectangle extends GeometricObject
     private double area;
     private double perimeter;
 
+    // Initializes a default rectangle
     public Rectangle()
     {
         this.side1 = 1;
         this.side2 = 1;
     }
 
-    // Creates a rectangle
+    // Initializes a rectangle with side1, side2
     public Rectangle(double side1, double side2)
     {
         this.side1 = side1;
         this.side2 = side2;
     }
 
-    // Returns the area of the rectangle
+    // Deteremines the area of the rectangle
     public double getArea()
     {
         area = side1 * side2;
@@ -26,7 +27,7 @@ public class Rectangle extends GeometricObject
         return area;
     }
 
-    // Returns the perimeter of the rectangle
+    // Determines the perimeter of the rectangle
     public double getPerimeter()
     {
         perimeter = (2 * side1) + (2 * side2);

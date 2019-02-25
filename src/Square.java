@@ -4,12 +4,13 @@ public class Square extends Rectangle
     private double area;
     private double perimeter;
 
+    // Initializes a default square
     public Square()
     {
         this.side = 1;
     }
 
-    // Creates a square
+    // Initializes a square with side
     public Square(double side)
     {
         this.side = side;
@@ -17,14 +18,14 @@ public class Square extends Rectangle
         Rectangle rectangleSquare = new Rectangle(side, side);
     }
 
-    // Returns the area of the square
+    // Determines the area of the square
     public double getArea()
     {
         area = side * side;
         return area;
     }
 
-    // Returns the perimeter of the square
+    // Determines the perimeter of the square
     public double getPerimeter()
     {
         perimeter = 4 * side;

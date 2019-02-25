@@ -7,6 +7,7 @@ public class Circle extends GeometricObject
     private double area;
     private double perimeter;
 
+    // Initializes a default circle
     public Circle()
     {
         this.x = 0;
@@ -14,7 +15,7 @@ public class Circle extends GeometricObject
         this.radius = 1;
     }
 
-    // Creates a circle
+    // Initializes a circle with x, y, radius
     public Circle(double x, double y, double radius)
     {
         this.x = x;
@@ -22,7 +23,7 @@ public class Circle extends GeometricObject
         this.radius = radius;
     }
 
-    // Returns the area of the circle
+    // Determines the area of the circle
     public double getArea()
     {
         area = pi * (radius * radius);
@@ -30,7 +31,7 @@ public class Circle extends GeometricObject
         return Math.round(area * 10d)/10d;
     }
 
-    // Returns the perimeter of the circle
+    // Determines the perimeter of the circle
     public double getPerimeter()
     {
         perimeter = 2 * pi * radius;

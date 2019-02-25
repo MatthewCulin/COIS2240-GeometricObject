@@ -5,6 +5,7 @@ class Triangle extends GeometricObject
     private double side3;
     private double area;
 
+    // Initializes a default triangle
     public Triangle()
     {
         this.side1 = 1.0;
@@ -12,6 +13,7 @@ class Triangle extends GeometricObject
         this.side3 = 1.0;
     }
 
+    // Iniitializes a triangle with side1, side2, side3
     public Triangle(double side1, double side2, double side3)
     {
         this.side1 = side1;
@@ -19,6 +21,7 @@ class Triangle extends GeometricObject
         this.side3 = side3;
     }
 
+    // Determines the area of the triangle
     public double getArea()
     {
         double s = (side1 + side2 + side3) / 2;
@@ -27,6 +30,7 @@ class Triangle extends GeometricObject
         return Math.round(area * 10d)/10d;
     }
 
+    // Determines the perimeter of the triangle
     public double getPerimeter()
     {
         return side1 + side2 + side3;
