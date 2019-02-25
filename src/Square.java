@@ -32,4 +32,9 @@ public class Square extends Rectangle
         return perimeter;
     }
 
+    public String toString()
+    {
+        return " square:" + "\nSide: " + side;
+    }
+
 }// END OF SQUARE CLASS

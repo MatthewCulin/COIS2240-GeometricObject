@@ -33,4 +33,9 @@ public class Rectangle extends GeometricObject
 
         return perimeter;
     }
+
+    public String toString()
+    {
+        return " rectangle: \nSide1: " + side1 + "\nSide2: " + side2;
+    }
 }// END OF RECTANGLE CLASS

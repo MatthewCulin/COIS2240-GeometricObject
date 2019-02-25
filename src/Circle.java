@@ -27,7 +27,7 @@ public class Circle extends GeometricObject
     {
         area = pi * (radius * radius);
 
-        return area;
+        return Math.round(area * 10d)/10d;
     }
 
     // Returns the perimeter of the circle
@@ -35,7 +35,12 @@ public class Circle extends GeometricObject
     {
         perimeter = 2 * pi * radius;
 
-        return perimeter;
+        return Math.round(perimeter * 10d)/10d;
+    }
+
+    public String toString()
+    {
+        return " circle: \nX: " + x + "\nY: " + y + "\nRadius: " + radius;
     }
 
 }// END OF CIRCLE CLASS

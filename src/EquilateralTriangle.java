@@ -18,24 +18,20 @@ public class EquilateralTriangle extends Triangle
 
     public double getArea()
     {
-        double height;
-        double base;
-        double heightCalc;
+        double s = (3 * side) / 2;
+        area = Math.sqrt(s * (s - side) * (s - side) * (s - side));
 
-        base = side;
-        heightCalc = (side * side) - ((base/2) * (base/2));
-
-        java.lang.Math.sqrt(heightCalc);
-
-        height = heightCalc;
-
-        area = (base * height)/2;
-        return area;
+        return Math.round(area * 10d)/10d;
     }
 
     public double getPerimeter()
     {
         perimeter = 3 * side;
-        return perimeter;
+        return Math.round(perimeter * 10d)/10d;
+    }
+
+    public String toString()
+    {
+        return "n equilateral triangle: \nSide: " + side;
     }
 }// END OF EQUILATERAL TRIANGLE CLASS

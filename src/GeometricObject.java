@@ -47,7 +47,7 @@ public abstract class GeometricObject
     @Override
     public String toString()
     {
-        return "Created on: " + dateCreated + "\nColour: " + colour + " \nFilled: " + filled;
+        return "\nCreated on: " + dateCreated + "\nColour: " + colour + " \nFilled: " + filled;
     }
 
     public abstract double getArea();
